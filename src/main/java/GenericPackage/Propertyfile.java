@@ -9,9 +9,8 @@ public class Propertyfile {
 		FileInputStream fis=new FileInputStream(".\\src\\test\\resources\\TestData.properties");
 		Properties prop=new Properties();
 		prop.load(fis);
-		String URL = prop.getProperty("url");
-		String BROWSER = prop.getProperty("browser");
-		return key;
+		String value = prop.getProperty(key);
+		return value;
 		
 		
 	}

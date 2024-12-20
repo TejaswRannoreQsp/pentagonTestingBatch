@@ -3,13 +3,15 @@ package TestScripts;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import GenericPackage.BaseClass;
 import GenericPackage.ExcelFile;
 import POM.RegisterPage;
 import POM.WelcomePage;
-
+@Listeners(GenericPackage.ListenersClass.class)
 public class Tc01_Reg_test extends BaseClass{
 	@Test
 	public void register() throws EncryptedDocumentException, IOException {
@@ -24,7 +26,9 @@ public class Tc01_Reg_test extends BaseClass{
 	r.getEmailTextfield().sendKeys(e.toreadFromExcelFile("Register", 2, 1));
 	r.getPasswordTextfield().sendKeys(e.toreadFromExcelFile("Register", 3, 1));
 	r.getConfirmpasswordTextfield().sendKeys(e.toreadFromExcelFile("Register", 4, 1));
+    Assert.fail();
 	r.getRegisterButton().click();
+	
 	
 	
 	}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[DataBase connection started]]>
@@ -8,88 +8,66 @@
       <![CDATA[Browser is launched]]>
     </line>
     <line>
+      <![CDATA[Browser is maximized]]>
+    </line>
+    <line>
+      <![CDATA[Browser is navigated to application]]>
+    </line>
+    <line>
       <![CDATA[DataBase connection flushed out or removed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-11-21T13:39:45 IST" name="Default suite" finished-at="2024-11-21T13:39:45 IST" duration-ms="50">
+  <suite started-at="2024-11-22T11:55:50 IST" name="Default suite" finished-at="2024-11-22T11:55:58 IST" duration-ms="7292">
     <groups>
     </groups>
-    <test started-at="2024-11-21T13:39:45 IST" name="Default test" finished-at="2024-11-21T13:39:45 IST" duration-ms="50">
+    <test started-at="2024-11-22T11:55:50 IST" name="Default test" finished-at="2024-11-22T11:55:58 IST" duration-ms="7292">
       <class name="TestScripts.Tc01_Reg_test">
-        <test-method is-config="true" signature="beforesuiteconfi()[pri:0, instance:TestScripts.Tc01_Reg_test@59662a0b]" started-at="2024-11-21T13:39:45 IST" name="beforesuiteconfi" finished-at="2024-11-21T13:39:45 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="beforesuiteconfi()[pri:0, instance:TestScripts.Tc01_Reg_test@35e2d654]" started-at="2024-11-22T11:55:50 IST" name="beforesuiteconfi" finished-at="2024-11-22T11:55:50 IST" duration-ms="14" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[DataBase connection started]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforesuiteconfi -->
-        <test-method is-config="true" signature="ToLaunchBrowser()[pri:0, instance:TestScripts.Tc01_Reg_test@59662a0b]" started-at="2024-11-21T13:39:45 IST" name="ToLaunchBrowser" finished-at="2024-11-21T13:39:45 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null
-at GenericPackage.WebDriverUtility.toMaximize(WebDriverUtility.java:28)
-at GenericPackage.BaseClass.ToLaunchBrowser(BaseClass.java:36)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="ToLaunchBrowser()[pri:0, instance:TestScripts.Tc01_Reg_test@35e2d654]" started-at="2024-11-22T11:55:50 IST" name="ToLaunchBrowser" finished-at="2024-11-22T11:55:52 IST" duration-ms="1996" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is launched]]>
             </line>
+            <line>
+              <![CDATA[Browser is maximized]]>
+            </line>
           </reporter-output>
         </test-method> <!-- ToLaunchBrowser -->
-        <test-method is-config="true" signature="NavigateToURl()[pri:0, instance:TestScripts.Tc01_Reg_test@59662a0b]" started-at="2024-11-21T13:39:45 IST" name="NavigateToURl" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1732176585589" status="SKIP">
+        <test-method is-config="true" signature="NavigateToURl()[pri:0, instance:TestScripts.Tc01_Reg_test@35e2d654]" started-at="2024-11-22T11:55:52 IST" name="NavigateToURl" finished-at="2024-11-22T11:55:55 IST" duration-ms="2620" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Browser is navigated to application]]>
+            </line>
           </reporter-output>
         </test-method> <!-- NavigateToURl -->
-        <test-method signature="register()[pri:0, instance:TestScripts.Tc01_Reg_test@59662a0b]" started-at="2024-11-21T13:39:45 IST" name="register" finished-at="2024-11-21T13:39:45 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="register()[pri:0, instance:TestScripts.Tc01_Reg_test@35e2d654]" started-at="2024-11-22T11:55:55 IST" name="register" finished-at="2024-11-22T11:55:57 IST" duration-ms="2186" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null
-at GenericPackage.WebDriverUtility.toMaximize(WebDriverUtility.java:28)
-at GenericPackage.BaseClass.ToLaunchBrowser(BaseClass.java:36)
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at TestScripts.Tc01_Reg_test.register(Tc01_Reg_test.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -108,19 +86,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestScripts.Tc01_Reg_test@59662a0b]" started-at="2024-11-21T13:39:45 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1732176585595" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="TocloseBrowser()[pri:0, instance:TestScripts.Tc01_Reg_test@59662a0b]" started-at="2024-11-21T13:39:45 IST" name="TocloseBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1732176585597" status="SKIP">
+        <test-method is-config="true" signature="TocloseBrowser()[pri:0, instance:TestScripts.Tc01_Reg_test@35e2d654]" started-at="2024-11-22T11:55:57 IST" name="TocloseBrowser" finished-at="2024-11-22T11:55:58 IST" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TocloseBrowser -->
-        <test-method is-config="true" signature="aftersuiteconfi()[pri:0, instance:TestScripts.Tc01_Reg_test@59662a0b]" started-at="2024-11-21T13:39:45 IST" name="aftersuiteconfi" finished-at="2024-11-21T13:39:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestScripts.Tc01_Reg_test@35e2d654]" started-at="2024-11-22T11:55:57 IST" name="logoutFromApplication" finished-at="2024-11-22T11:55:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="aftersuiteconfi()[pri:0, instance:TestScripts.Tc01_Reg_test@35e2d654]" started-at="2024-11-22T11:55:58 IST" name="aftersuiteconfi" finished-at="2024-11-22T11:55:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[DataBase connection flushed out or removed]]>

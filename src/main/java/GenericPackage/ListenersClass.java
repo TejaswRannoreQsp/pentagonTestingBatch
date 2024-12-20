@@ -1,12 +1,12 @@
 package GenericPackage;
 
-import org.openqa.selenium.WebDriver;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class ListenersClass implements ITestListener{
-	public WebDriver driver;
+	
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -31,7 +31,7 @@ public class ListenersClass implements ITestListener{
 		JavaUtility j=new JavaUtility();
 		String screenshot = methodName+j.toFetchDateAndTime();
 		try {
-			w.toperformScreenshotOnWebpage(driver, screenshot);
+			w.toperformScreenshotOnWebpage(BaseClass.sdriver, screenshot);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

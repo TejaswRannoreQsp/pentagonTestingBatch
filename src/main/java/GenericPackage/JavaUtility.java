@@ -12,11 +12,12 @@ public class JavaUtility {
 	public String toFetchDateAndTime() {
 		Date d=new Date();
 		String date[]=d.toString().split(" ");
-		String month = date[0];
-		String date1 = date[1];
-		String time = date[2].replace(":", "-");
-		String year = date[3];
-		String finalDate=month+" "+date1+" "+time+" "+year;
+		String day = date[0];
+		String month = date[1];
+		String date1 = date[2];
+		String time = date[3].replace(":", "-");
+		String year = date[5];
+		String finalDate=day+" "+month+" "+date1+" "+time+" "+year;
 		return finalDate;
 	}
 

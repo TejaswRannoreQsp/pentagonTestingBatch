@@ -17,6 +17,7 @@ public class BaseClass {
 	public WebDriver driver=null;
 	Propertyfile p=new Propertyfile();
 	WebDriverUtility w=new WebDriverUtility();
+	public static WebDriver sdriver;
 	
 	@BeforeSuite
 	public void beforesuiteconfi() {
@@ -31,6 +32,7 @@ public class BaseClass {
 			driver=new ChromeDriver();
 		}else if(BROWSER.equalsIgnoreCase("edge"))
 			driver=new EdgeDriver();
+		sdriver=driver;
 		Reporter.log("Browser is launched",true);
 		
 		w.toMaximize(driver);
